@@ -140,3 +140,8 @@ var titleCase = titleInput
 document.write("<h3>Q11</h3>");
 document.write("User input: " + titleInput + "<br>");
 document.write("Title case: " + titleCase);
+//q12
+var num = 35.6;
+document.wrtie("Number: + num + <br>");
+var result = num.toString().replace(".","");
+document.wrtie("Result:" + result);
