@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Details</h1>
+
+    <!-- Student Form -->
+    <form id="studentForm">
+
+        <input type="text" id="name" placeholder="Enter Name" required>
+
+        <input type="text" id="rollNo" placeholder="Enter Roll No" required>
+
+        <input type="text" id="className" placeholder="Enter Class" required>
+
+        <input type="number" id="age" placeholder="Enter Age" required>
+
+        <button type="submit">Add Student</button>
+
+    </form>
+
+    <!-- Student Table -->
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Class</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTable">
+        </tbody>
+
+    </table>
+
+
+    <!-- Hidden Edit Form -->
+    <div id="editBox">
+
+        <h2>Edit Student</h2>
+
+        <input type="text" id="editName" placeholder="Name">
+
+        <input type="text" id="editRollNo" placeholder="Roll No">
+
+        <input type="text" id="editClass" placeholder="Class">
+
+        <input type="number" id="editAge" placeholder="Age">
+
+        <button onclick="updateStudent()">Update</button>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
